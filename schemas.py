@@ -2,6 +2,11 @@
 from pydantic import BaseModel
 from typing import Optional
 
+class UserAuth(BaseModel):
+    username: str
+    password: str
+    
+
 # --- SCHEMA PRODI ---
 class ProdiCreate(BaseModel):
     id: str
